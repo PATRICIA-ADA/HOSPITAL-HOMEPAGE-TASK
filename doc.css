@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ====GENERAL HEADING/NAVIGATOR BAR==== */
+img{
+    display: block;
+}
+.image{
+    margin:0.3rem 1rem; 
+    overflow: auto; 
+}
+.med9{ 
+    border: 1px solid burlywood;
+    border-radius: 60%;
+    float: left;
+}
+.medname{
+    font-family: 'alkatra';
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    color: navy;
+    font-weight: bold;
+}
+.login{
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+}
+.login a{
+    text-decoration: none;
+    color: rgb(43, 70, 4);
+    font-size: 1.6rem;
+    font-family: 'Satisfy', cursive; 
+}
+.login a:hover{
+    border-bottom: 2px double green;
+    color: brown;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    background: lightskyblue;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0;
+}
+.navlink ul{
+    display: flex;
+    cursor: pointer;  
+}
+.navlink li{
+    width:8rem;
+}
+.nav a:hover{
+    padding:0.3rem 0.8rem ;
+    border-radius: 20px;
+    background: rgb(3, 53, 73);
+    color:whitesmoke;
+}
+.nav .navbar{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display:none;
+}
+.navbar1{
+    width: 30px;
+    height: 3px;
+    background-color:black ;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* ===MAIN:SECTION ONE=== */
+.sec{
+    border-radius: 20px;
+}
+.sec2 a{
+    background: rgb(29, 29, 97);
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(57, 57, 87);
+}
+.sec2 a:hover{
+    cursor: pointer;
+    background: rgb(49, 49, 136);
+    color: whitesmoke;
+}
+
+ /* MAIN:2ND SECTION */
+ .cont1{
+    display: grid;
+    background-image: linear-gradient(to right, skyblue, lightgreen);
+    text-align: center
+}
+.fig2 img{
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 0.5rem;
+    }
+.fig2 .span1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    color:navy;
+    text-decoration:underline;
+    }
+.fig2 .p1{
+        font-size: 1.1rem;
+    }
+.fig2 .p1 a{
+    background: rgb(231, 231, 236);
+    color: navy;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(127, 127, 133);
+    }
+.fig2 .p1 a:hover{
+    cursor: pointer;
+    background: rgb(49, 49, 136);
+    color: whitesmoke;
+    }
+
+     /* MAIN:3RD SESSION */
+.sec1{
+    font-weight: bold;
+}
+em{
+    font-style: italic;
+    font-weight: bold;
+    color: navy;
+}
+
+    /* MAIN:4TH SESSION */
+.cont2{
+    background:skyblue;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 1rem; 
+}
+    
+.cont2 h1{
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-size: 2rem;
+}
+.figtwo img{
+    border-radius: 50%;
+    margin: auto;
+}
+.figtwo .spanone{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+    color:navy; 
+}
+.figtwo p{
+    padding:1rem;
+}
+.figtwo .pone a{
+    background: rgb(231, 231, 236);
+    color: navy;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgb(170, 170, 173);
+}
+.figtwo .pone a:hover{
+    cursor: pointer;
+    background: rgb(49, 49, 136);
+    color: whitesmoke;
+}
+
+/* <!--     ===FOOTER DESIGN=== --> */
+footer{
+    margin-top: 1rem;
+    display: grid;
+    background: rgb(53, 52, 52);
+    color: whitesmoke;
+}
+.art2 h4{
+font-size: 1.5rem;
+}
+.art2 ul{
+    list-style-type: square;
+    padding-left: 1.2rem;
+    line-height: 1.5rem;
+}
+.art2 a{
+    line-height: 1.5rem;  
+}
+.art2 a:hover{
+    text-decoration: underline; 
+    color: rgb(7, 139, 248);
+    cursor: pointer;
+}
+.icons .icon{
+    margin: 1rem;
+    }
+form label{
+    font-size: 1.3rem;
+    }
+form input{
+    border: 1px solid grey;
+    padding: 0.6rem 1.5rem;
+    background-color: whitesmoke;
+    }
+::placeholder{
+    color:black;
+    font-size: 1.3rem;
+    }
+button{
+    border: 1px solid skyblue;
+    padding: 0.3rem 1.3rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(27, 164, 218);
+    font-size: 1.4rem;
+    
+    }
+    
+/* ===***** BREAKPOINTS IN CSS****===
+Now let’s see some common breakpoints for widths of devices:
+
+    320px — 480px: Mobile devices
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV */
+
+    @media (max-width:798px) {
+/* HEADER */
+.login{
+    position:absolute ;
+    top: 2rem;
+    right: 5rem;
+}
+.nav{
+    display:flex ;
+    /* height: 2rem; */
+}
+.nav .navbar{
+    display: block;
+}
+.navlink{
+    display: none;
+}
+.navlink ul{
+    width: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.navlink li{
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+}
+.navlink.active{
+    display: flex
+}
+}    
+
+/*  ***CSS BREAKPOINTS FOR MOBILE DEVICES*** */
+/* ===HEADER=== */
+@media (max-width:500px){
+.med9{
+    width: 30px;
+    height: 30px;
+} 
+
+.medname{
+    font-family: 'alkatra';
+    margin-top: 0;
+    font-size: 1rem;
+}
+.login{
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+}
+.login a{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.nav .navbar{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    }
+
+/* ===MAIN SECTION ONE=== */
+
+ .fig1{
+    padding:1rem;
+ }
+.sec1{
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+}
+.sec2{
+    font-weight:400;
+    font-size: 1rem;
+}
+ .sec2 a{
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* ===MAIN SECTION TWO=== */
+.fig2 img{
+    width: 100px;
+    height: 80px;
+}
+.line1{
+    margin-top: 1rem;
+    width:100% ;
+    height: 0.5rem;
+    background-color: skyblue;
+    border-style: double;
+    }  
+.fig2 .p1{
+    padding: 0.5rem;
+}
+.fig2 .p1 a{
+    padding: 0.3rem 0.5rem;
+
+}
+
+    /* MAIN:3RD SESSION */
+
+.fig1 .secc{
+    border-radius: 20px;
+    height: 250px;
+}
+  
+/* ===FOOTER SECTION=== */
+footer{
+    padding: 0.5rem;
+}
+article{
+    display: grid;
+    margin-top: 1rem;
+}
+.art3{
+    grid-template-columns: repeat(2, 1fr);
+}
+.icons{
+    padding: 1rem 0;
+    }
+ }
+        
+   /*  ***CSS BREAKPOINTS FOR IPAD DEVICES*** */
+
+   @media (min-width:501px) and (max-width:798px) {
+    /* ===HEADER=== */
+.med9{
+    width: 50px;
+    height: 30px;
+    } 
+.medname{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+.login{
+    position: absolute;
+    right: 4rem;
+    top: 1.8rem;
+}
+.login a{
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+.nav .navbar{
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    }
+
+  /* ===MAIN SECTION ONE=== */
+
+.fig1{
+    overflow: auto;
+    padding: 0 0.3rem;
+}
+.fig1 p{
+    text-align: center;
+    width: 40rem;
+}
+.sec{
+    float: right;
+    width: 280px;
+}
+.sec1{
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sec2{
+    font-size: 1rem;
+}
+
+/* ==MAIN:SECTION TWO== */
+.line1{
+    display: none;
+}
+.cont1{
+    padding: 0 1rem;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 2rem;   
+}
+
+/* <!--  ==3RD SESSION== --> */
+ .figg{
+    max-height: 100vh;
+ }
+
+ /* <!--  ==4TH SESSION== --> */
+ .cont2{
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-areas: 
+    "h1 h1 "
+    "one two "
+   " three four"; 
+}
+.cont2 h1{
+    grid-area: h1;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-size: 2rem;
+}
+
+/* ===FOOTER SECTION=== */
+footer{
+    padding: 0.5rem;
+}
+article{
+    display: grid;
+    margin-top: 1rem;
+}
+.art3{
+   grid-template-columns: repeat(2, 1fr);
+}
+.icons{
+padding: 1rem 0;
+}     
+.art4, .form{
+    text-align: center;
+ }
+}
+
+ /*  ***CSS BREAKPOINTS FOR DESKTOP*** */
+@media (min-width:791px) and (max-width:1023px){
+    /* ===HEADER=== */
+.med9{
+    width: 80px;
+    height: 50px;
+    } 
+.medname{
+    font-size: 2rem;
+}
+.login{
+    position: absolute;
+    right: 1rem;
+    top:2rem;
+}
+.nav{
+    align-items: left;
+    padding: 0.3rem 0;
+}
+.navlink li{
+    width:6.4rem;
+}
+.nav a:hover{
+    padding:0.2rem 0;  
+}
+
+/* MAIN:1ST SESSION */
+.fig1{
+    overflow: auto;
+    padding: 1rem;
+}
+.fig1 p{
+    text-align: center;
+    width: 40rem;
+}
+.sec{
+    float: right;
+    width: 480px;
+}
+.sec1{
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sec2{
+    font-size: 1rem;
+}
+
+/* MAIN:2ND SESSION */
+.cont1{
+    grid-template-columns:repeat(4, 1fr);
+}
+.fig2{
+    padding: 1rem;
+}
+.fig3{
+    border: 1px solid rgb(118, 197, 228);
+}
+.fig4{
+    border: 1px solid rgb(128, 243, 128);
+}
+.line1{
+    display: none;
+}
+
+/* MAIN:4TH SESSION */
+
+.cont2{
+    grid-template-columns:repeat(4, 18%);
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "one two three four"; 
+}
+
+.cont2 h1{
+    grid-area: h1;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-size: 2rem;
+}
+.figtwo p{
+    padding-bottom: 1rem;
+}
+
+/* <!--     ===FOOTER DESIGN=== --> */
+footer{
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 3rem;
+}
+.art4, .form{
+    padding: 1rem 0;
+    margin: auto;
+}
+}
+
+/*  ***CSS BREAKPOINTS FOR LARGE SCREEN*** */
+@media (min-width:1024px){
+/* MAIN:1ST SESSION */
+.fig1{
+    overflow: auto;
+    padding: 0 6rem;
+}
+.fig1 p{
+    text-align: center;
+    width: 40rem;
+}
+.sec{
+    float: right;
+}
+.sec1{
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sec2{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* MAIN:2ND SESSION */
+.cont1{
+    grid-template-columns:repeat(4, 1fr);
+}
+
+.fig2{
+    padding: 1rem;
+}
+.fig3{
+    border: 1px solid rgb(118, 197, 228);
+}
+.fig4{
+    border: 1px solid rgb(128, 243, 128);
+}
+.line1{
+    display: none;
+}
+
+/* MAIN:4TH SESSION */
+
+.cont2{
+    grid-template-columns:repeat(4, 18%);
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "one two three four"; 
+}
+
+.cont2 h1{
+    grid-area: h1;
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-size: 2rem;
+}
+.figtwo p{
+    padding-bottom: 1rem;
+}
+
+/* <!--     ===FOOTER DESIGN=== --> */
+footer{
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 3rem;
+}
+
+}
